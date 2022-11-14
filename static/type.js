@@ -11,6 +11,11 @@ function sleep(ms) {
 function byebye(){
     skip = true
 }
+console.log("Hey Welcome to the Console!")
+console.log("skipped the message?")
+console.log("wondering what the whole thing was?")
+console.log("dw it said")
+console.log(welcome)
 async function type(welcome){
 for (let i = 0; i < welcome.length; i++){
     x = x + welcome[i]
@@ -74,7 +79,6 @@ function stuff(){
     document.getElementById('home').style.animation = ""
     function sus(data)
     {
-        console.log('hi')
         document.getElementById('feed').innerHTML =( `</br>${data[1]}<br> by ${data[2]}
         <div>
         <img class="song" style="width:15vw;
