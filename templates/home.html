@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Om's Den
+    </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='normalize.css') }}">
+    <link rel="icon" href="/static/disk.svg">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='glaze.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body style="
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: black;
+    overflow: hidden;
+    margin: 0px;
+">
+    <div onclick="byebye()" id=skip style="
+display:flex;
+position:absolute;
+color:white;
+width: 100%;
+justify-content: flex-end;
+z-index: +1;
+transform: translateY(-8vh);"><a style="
+    padding-right: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    padding-bottom: 10px;
+">skip</a></div>
+    <div id="bg" style="
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+">
+        <img id="bgimg" class="animate__animated animate__fadeIn" style="
+height: 100%;
+position: fixed;
+animation-play-state: paused;
+animation-duration: 3s;
+">
+        <div id="intro" style="
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: max(2vw,9px);
+    font-family: monospace;
+    color: mediumspringgreen;
+">
+            <div id=run class="animate__animated animate__fadeOutUp" style="display:flex;
+     animation-play-state: paused;
+     animation-duration: 1.8s;
+     flex-direction:row;">
+                <h1 id="type">Welcome.</h1>
+                <h1 id=blink style="animation:blink .53s infinite;">|</h1>
+            </div>
+        </div>
+        <div id=page class="animate__animated animate__fadeInUp" style="display:none ;
+animation-play-state: paused;
+flex-direction: column;
+justify-content: center;
+">
+            <div id=pic style="display: flex;
+flex-direction: column;
+justify-content: flex-end;">
+                <div id="quote" style="
+color: white;
+position: absolute;
+padding-bottom: 30px;
+padding-left: 10px;
+font-size: min(4vw,30px);
+z-index: +1;
+font-family: 'Josefin Sans';
+font-style: normal;
+letter-spacing: 0.09em;
+"><br>Seize the</br>Day</div>
+                <div class="tint" id=tint style="
+position:absolute;
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1));
+width: 100%;
+height: 16%;
+transition: none;
+padding-bottom: 10px;">
+                </div>
+                <img class="banner" style="
+max-width: 100%;
+max-height: 100%;
+" src="/static/Sieze.png">
+            </div>
+            <div id=right style="display:flex;
+flex-direction:row;
+justify-content:center">
+                <div class="welp" id=bruh style="
+display:flex;
+flex-direction:column;
+max-width: 53.33vw;
+transition: all .4s;
+">
+                    <div id=nav style="
+    width: 100%;
+    color: white;
+    background:black;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    ">
+                        <a id=home onclick="home()" style="
+    color:lemonchiffon;
+    padding: 15px;
+    text-decoration: none;
+    animation: sheesh 3s infinite;
+    border-radius: 20px;
+    cursor: pointer;
+    ">Home</a>
+                        <a id=work onclick="work()" style="
+    color:lemonchiffon;
+    padding: 15px;
+    text-decoration:none;
+    border-radius: 20px;
+    cursor: pointer;">Work</a>
+                        <a id=stuff onclick="stuff()" style="
+    color:lemonchiffon;
+    padding: 15px;
+    text-decoration:none;
+    border-radius: 20px;
+    cursor: pointer;">Stuff</a>
+                    </div>
+                    <div style="
+    box-sizing: border-box;
+    color: white;
+    font-size: x-large;
+    display: flex;
+    justify-content: flex-start;">
+                        <p id=feed class="about" style="font-family:Raleway ;
+    font-size: 1.1vw;
+    text-align: center;
+    width: 100%;">
+                            <br> Hey I am Om, Currently trying to get a college i'll love to spend the best 4 years of
+                            my life at.</br>
+                            <br>Hopefully i get it 🤞</br>
+                        </p>
+                    </div>
+                    <div id=foot style="color:thistle ;
+display: flex;
+justify-content: center;
+">
+                        <div id="bost" style="
+    display: flex;
+    flex-direction: row;">
+                            <a href="https://instagram.com/obviouslynotom" target="_blank"><img
+                                    style="padding-right:5px;" src="/static/insta.svg"></a>
+                            <a href="https://twitter.com/probablyom" target="_blank"><img stlye="padding-left:5px;"
+                                    src="/static/twit.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{{url_for('static', filename = 'type.js')}}"></script>
+
+</html>
