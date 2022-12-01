@@ -2,13 +2,21 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="preload" href="{{url_for('static', filename='errorbg.png') }}" as="image"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Oops</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
     </style>
 </head>
 
-<body style="background-image: url(/static/errorbg.png);">
-    <div style="
+<body style="margin: 0px;">
+<div class="animate__animated animate__fadeIn" style="height:100%;
+background-image: url(/static/errorbg.png);
+animation-delay: 0.7s;">
+    <div class="animate__animated animate__fadeIn"style="
+    animation-duration: 1.2s;
+    animation-delay: 1s;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -32,6 +40,7 @@
                 d="M36 57.168l-0.864 -0.72C16.56 41.328 11.52 36 11.52 27.36c0 -7.2 5.76 -12.96 12.96 -12.96 5.904 0 9.216 3.312 11.52 5.904 2.304 -2.592 5.616 -5.904 11.52 -5.904 7.2 0 12.96 5.76 12.96 12.96 0 8.64 -5.04 13.968 -23.616 29.088l-0.864 0.72zM24.48 17.28c-5.616 0 -10.08 4.464 -10.08 10.08 0 7.344 4.608 12.24 21.6 26.064 16.992 -13.824 21.6 -18.72 21.6 -26.064 0 -5.616 -4.464 -10.08 -10.08 -10.08 -5.04 0 -7.776 3.024 -9.936 5.472L36 24.624l-1.584 -1.872C32.256 20.304 29.52 17.28 24.48 17.28z">
                 Home</path>
         </svg></a></div>
+    </div>
 </body>
 
 </html>
