@@ -2,7 +2,7 @@
 
 ### This is my verse in the grand play of the universe 🌠
 
-Hosted on Deta here[https://notom.deta.dev]
+[Website](https://notom.deta.dev).
 
-Hosted on [Deta](https://notom.deta.dev).
+Hosted on [Deta](https://deta.sh).
 Using [Spotipy](https://github.com/spotipy-dev/spotipy) to display now playing.

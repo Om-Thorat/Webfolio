@@ -33,3 +33,7 @@ def spotify():
         artist = (current['items'][0]['track']['artists'][0]['name'])
         cover = (current['items'][0]['track']['album']['images'][0]['url'])
         return ["last Played",songname,artist,cover]
+@app.errorhandler(404)
+def NotFound(e):
+    return render_template('404.html')
+app.run()
