@@ -77,21 +77,22 @@ function stuff(){
     document.getElementById('stuff').style.animation="sheesh 3s infinite"
     document.getElementById('work').style.animation = ""
     document.getElementById('home').style.animation = ""
-    function sus(data)
-    {
-        document.getElementById('feed').innerHTML =( `</br>${data[1]}<br> by ${data[2]}
-        <div>
-        <img class="song" style="width:15vw;
-        max-width:110px;
-        padding-top:1%" src=${data[3]}></div>
-        ${data[0]}<br></br>`)
-        document.getElementById('stuff').style.animation="sheesh 3s infinite"
-        document.getElementById('work').style.animation = ""
-        document.getElementById('home').style.animation = ""}
-    document.getElementById('feed').style.display = "flex"
-    document.getElementById('feed').style.flexDirection = "column-reverse"
-    fetch('/spotify')
-    .then(response => response.json())
-    .then(data => sus(data))
+    // function sus(data)
+    // {
+    //     document.getElementById('feed').innerHTML =( `</br>${data[1]}<br> by ${data[3]}
+    //     <div>
+    //     <img class="song" style="width:15vw;
+    //     max-width:110px;
+    //     padding-top:1%" src=${data[2]}></div>
+    //     ${data[0]}<br></br>`)
+    //     document.getElementById('stuff').style.animation="sheesh 3s infinite"
+    //     document.getElementById('work').style.animation = ""
+    //     document.getElementById('home').style.animation = ""}
+    // document.getElementById('feed').style.display = "flex"
+    // document.getElementById('feed').style.flexDirection = "column-reverse"
+    // fetch('/spotifyinfo')
+    // .then(response => response.json())
+    // .then(data => sus(data))
+    document.getElementById('feed').innerHTML = `<img class="song" style="padding:2vw;max-height:20vh" src='/spotify'>`
 }
 type(welcome)

@@ -120,6 +120,7 @@
 @media screen and (max-width: 768px) {
 .about{
   font-size: 70% !important;
+  margin: 0px 10% 0px 10%;
 } 
 }
 
@@ -132,7 +133,7 @@
 
 @media screen and (max-width: 768px) {
 .song{
-  width: 110px !important;
+  width: 70vw !important;
 }
   
 }
